@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12 " *ngFor="let s of sezioni">
+  <br/>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title" style="text-align: center; color: #009688">{{s.id}} {{s.nome}}</h3>
+      <hr/>
+        <app-sezione [nastri]="sendNastri(s)"></app-sezione>
+      </div>
+    </div>
+
+  </div>
+</div>
